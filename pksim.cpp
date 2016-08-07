@@ -8,8 +8,8 @@
 
 using namespace std;
 
-int M=10;		//number of boxes
-int N=3;		//number of devices
+int M=10;		//number of devices
+int N=3;		//number of box(preambles)
 int a=0;
 float empty=0;
 float collided=0;
@@ -54,10 +54,10 @@ int main(void)
 
 			for(int i=1; i<=M; i++)//產生M個球 隨機丟入N個box內
 			{
-				a=((int)(N*lcgrand(2)));
-				box[a]=box[a]+1;
-				cout << "box[" << a << "]: " << box[a] << endl;
-				system("pause");
+				a=((int)(N*lcgrand(2))); //Uniform Distribution Random Gen.隨機算出0-2
+				box[a]=box[a]+1; // Uniform Random丟到box0-2
+				//cout << "box[" << a << "]: " << box[a] << endl;
+				//system("pause");
 			}
 
 			empty=0;
