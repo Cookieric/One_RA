@@ -15,6 +15,7 @@ float empty=0;
 float collided=0;
 float one=0;
 
+
 int box[100]={0};	//box
 int pk[100]={0};		//幾個box有發生碰撞
 
